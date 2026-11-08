@@ -1,0 +1,27 @@
+{
+  "name": "mira_bilibili",
+  "version": "0.3.0",
+  "description": "DSH 哔哩哔哩接管插件（0.3.0 重构版）：Cookie 手填在 mira_account 的 creds/<id>.json（600，永不回显），账号池/绑定/入站路由/去重交给 mira_account；向 agent 暴露 25 个 bili_* 工具（私信收发/会话/动态/评论/搜索/视频/直播间弹幕与信息/截帧与录屏录音/bili_api 逃生舱）；读/写×小时/天四桶预算写死不可绕过（含逃生舱），撞 412/429 全局暂停退避；私信按对象独立会话，直播间白名单常驻 + 工具临时进出，弹幕自动应答有合并窗口与冷却；不做三连/投币/关注/花钱，不群发，不回陌生人",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "bilibili",
+    "chatbot",
+    "mira_account",
+    "budget",
+    "rate-limit"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xhqm-xyz/PluginDSH.git",
+    "directory": "mira_bilibili"
+  }
+}
