@@ -13,7 +13,9 @@
 """
 import argparse, json, sys, time
 
-CREDS = '$DSH_HOME/mira_config/mira_account/creds/bili-mira.json'
+import os
+_DSH_HOME = os.environ.get('DSH_HOME') or os.path.expanduser('~/.dsh')
+CREDS = os.path.join(_DSH_HOME, 'mira_config', 'mira_account', 'creds', 'bili-mira.json')
 EDITOR = 'https://member.bilibili.com/york/read-editor'
 UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
 
